@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head_links.ejs') %>
+</head>
+
+<body class="full-bg">
+    <!-- navbar -->
+    <%- include('../partials/navbar.ejs') %>
+
+    <!-- login area -->
+    <div class="modal-dialog log-sign-m">
+        <div class="modal-content ">
+            <div class="modal-heading ">
+                <h2 class="text-center mt-3">Login</h2>
+            </div>
+            <hr />
+            <div class="modal-body">
+                <form action="/log" method="POST">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="">Email :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="text" name="email" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="">Password :</label>
+                            <div class="input-group">
+                                <div class="input-group-text"> #</div>
+                                <input type="password" name="password" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="email" required>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-lg" style="background-color: #b1606a; color: white;">Login</button>
+                        <a href="/register" class="btn btn-outline-link">Register</a>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

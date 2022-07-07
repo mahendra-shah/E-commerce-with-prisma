@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head_links.ejs') %>
+</head>
+
+<body class="full-bg">
+    <!-- navbar -->
+    <%- include('../partials/navbar.ejs') %>
+
+        <!-- login area -->
+        <div class="modal-dialog log-sign-m">
+            <div class="modal-content">
+                <div class="modal-heading ">
+                    <h2 class="text-center mt-3">Add products to Warehouse</h2>
+                </div>
+                <hr />
+                <div class="modal-body ">
+                    <form action="/warehouse" method="POST" enctype="multipart/form-data">
+                        <div class="input-group pb-3">
+                            <label for="">Name :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">Aa</div>
+                                <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="product name" required>
+                            </div>
+                        </div>
+                        <div class="input-group pb-3">
+                            <label for="">Description :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">Aa</div>
+                                <textarea type="text" name="description" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="product description" required></textarea>
+                            </div>
+                        </div>
+                        <div class="input-group pb-3">
+                            <label for="">Quantity :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">Aa</div>
+                                <input type="text" name="qty" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="product quality" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="">Price :</label>
+                                <div class="input-group">
+                                    <div class="input-group-text">Aa</div>
+                                    <input type="text" name="price" class="form-control"
+                                        id="inlineFormInputGroupUsername" placeholder="product price" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group pb-3">
+                            <label for="">image :</label>
+                            <div class="input-group">
+                                <!-- <div class="input-group-text">image</div> -->
+                                <input type="file" name="imgUrl" class="form-control" id="inlineFormInputGroupUsername" required>
+                            </div>
+                        </div>                        
+
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-lg"
+                                style="background-color: #b1606a; color: white;">Add Product</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head_links.ejs') %>
+</head>
+
+<body class="full-bg">
+    <!-- navbar -->
+    <%- include('../partials/navbar.ejs') %>
+
+        <!-- login area -->
+        <div class="modal-dialog log-sign-m">
+            <div class="modal-content">
+                <div class="modal-heading ">
+                    <h2 class="text-center mt-3">Register</h2>
+                </div>
+                <hr />
+                <div class="modal-body ">
+                    <form action="/sign" method="POST">
+                        <div class="input-group pb-3">
+                            <label for="">Name :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">Aa</div>
+                                <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="input-group pb-3">
+                            <label for="">Email :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">@</div>
+                                <input type="text" name="email" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="email" required>
+                            </div>
+                        </div>
+                        <div class="input-group pb-3">
+                            <label for="">Mobile :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">+91</div>
+                                <input type="text" name="mobile" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="Mobile" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <label for="">Password :</label>
+                                <div class="input-group">
+                                    <div class="input-group-text"> #</div>
+                                    <input type="password" name="password" class="form-control"
+                                        id="inlineFormInputGroupUsername" placeholder="password" required>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group text-center">
+                            <button type="submit" class="btn btn-lg"
+                                style="background-color: #b1606a; color: white;">Register</button>
+                            <a href="/login" class="btn">Login</a>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

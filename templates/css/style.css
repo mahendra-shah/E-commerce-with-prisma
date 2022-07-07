@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.full-bg{
+    background-image: url('https://static-blog.omniconvert.com/blog/wp-content/uploads/2020/09/21135804/How-to-do-Growth-of-eCommerce-Website-scaled.jpg'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* -------------------- nav ---------------------------- */
+.navv{
+
+    background-color: rgba(202, 142, 142, .7)	;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* background-color: transparent; */
+   
+
+}
+.logo{
+    float: left;
+    font-weight: bolder;
+    font-size: 3rem;
+    padding-top:10px;
+    padding-left:200px;
+    /* color: white; */
+
+}
+.menu{
+    float: right;
+    padding-right: 200px;
+    z-index: 2;
+    
+}
+.menu-items{
+    display:inline-block;
+    margin-left: 10px;
+    padding: 20px 10px 0 10px;
+    
+    
+}
+
+.menu-bar{
+    margin: 10px 0 0 60px;
+    
+}
+.menu-link{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    
+}
+
+.menu-link:focus{
+    color: white;
+    border: 5px solid #3d2327;
+    background-color: #3d2327;
+    border-radius: 20px;
+}
+/* .menu-link:hover{
+    color: #1d26aa;
+} */
+.round{
+    border: 1px solid #f7ced4;
+    background-color: #f7ced4;
+    border-radius: 50px;
+    border-width: 10px;
+    padding: 0 5px 0 5px;
+}
+
+
+
+
+/* ----------------------- upper section -------------------------- */
+.up-sec{
+    
+    background-color: #b1606a;
+    padding-left: 200px;
+
+}
+
+.head{
+    color: white;
+    padding-top: 150px;
+    text-transform: capitalize;
+}
+.i-para{
+    color: white;
+    padding-top: 40px;
+}
+
+.btn{
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+.btn-1{
+    font-size: 15px;
+    color: white;
+    border: 10px solid #3d2327;
+    background-color: #3d2327;
+    border-radius: 50px;
+    padding-right: 12px;
+    padding-left: 12px;
+    cursor: pointer;
+}
+.btn-2{
+    padding: 0 22px 0 22px;
+    height: 35px;
+    font-size: 17px;
+    color: white;
+    background-color: #b1606a;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.sofa{
+    margin-top: -260px;
+    margin-left: 600px;
+    width: 1000px;
+    text-shadow: 20                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       px 2px 6px #3d2327;
+}
+
+.lamp{
+    height: 500px;
+    margin-left: 1600px;
+    margin-top: -700px;
+}
+
+/* -------------- first row card --------- */
+.card-container{
+    display: flex;
+    margin-left: 250px;
+    margin-right: 250px;
+    gap: 30px;
+}
+.main-card {
+    background-color: #be585823;
+    border-radius: 15px;
+    transition: 0.3s;
+    width: 450px;
+    height: 230px;
+}
+.main-card:hover {
+    box-shadow: 4px 15px 20px #914a4aad;
+    text-shadow: 2px 1px 50px  #ad48489d;
+    cursor: pointer;
+}
+
+.card-text-head{
+    padding: 70px 0 0 30px;
+}
+.card-text-para{
+    font-weight: 300;
+    padding-top: 20px;
+    font-size: small;
+}
+.main-card-image{
+    float: right;
+    border-radius: 100px;
+    box-shadow: 0 2px 4px 0 #be626233;
+    height: 130px;
+    width: 130px;
+    margin-top: -120px;
+    margin-right: 30px;
+}
+.main-card-image:hover{
+    box-shadow: 0 1px 40px  #ad48484b;
+
+}
+
+/* ------------ Best in Furniture section ---------------------- */
+.best-in-fur-head-div{
+    padding-top: 40px;
+    padding-bottom: 30px;
+    height: 100px;
+    margin-left: 200px;
+    text-shadow: 2px 4px 20px rgba(187, 101, 101, 0.267);
+}
+.read-more{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 1500px;
+}
+.best-in-fur-head{
+    float: left;
+    font-size: 60px;
+    color: #5a0132;
+    text-shadow: 2px 2px 5px #79484886;
+}
+.more{
+    float: right;
+    margin-left: 800px;
+    margin-top: 10px;
+    width: 100px;
+    font-size: 15px;
+    background-color: #b1606a;
+    border: 0 solid #b1606a;
+    box-shadow: 4px 4px 5px #794c4c81;
+    border-radius: 30px;
+    height: 40px;
+}
+.more a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+.best-in-fur-para{
+    padding: 7px 0 0 10px;
+}
+
+.para-up{
+    margin-top: -70px;
+}
+.best-in-fur-coll{
+    display: flex;
+    margin-left: 230px;
+    margin-right: 230px;
+    gap: 40px;
+}
+.best-in-fur-item{
+    background-color: #f5707023;
+    border-radius: 15px;
+    transition: 0.2s;
+    width: 260px;
+    height: 520px;
+}
+.best-in-fur-item:hover{
+    box-shadow: 2px 4px 20px #1f1f1fc9;
+    text-shadow: 4px 8px 10px #f77b7b2c;
+    cursor: pointer;
+}
+.best-in-fur-item-image{
+    box-shadow:2px 4px 10px #f17f7f6e;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 240px;
+    border-radius: 20px;
+    height: 300px;
+}
+.best-in-fur-desc{
+    text-align: center;
+    padding-top: 20px;
+}
+.best-in-fur-desc h4{
+    font-size: 20px;
+}
+.best-in-fur-desc p{
+    text-align: left;
+    padding: 20px 20px 0 20px;
+}
+.best-in-fur-desc h3{
+    text-align: left;
+    padding: 20px 0 0 20px;
+}
+.like-icon{
+    text-align: none;
+    width: 40px;
+    padding-left: 190px;
+    margin-top: -40px;
+}
+
+.buy-now button{
+    font-size: 20px;
+    margin-top: -5px;
+    height: 40px;
+    width: 125px;
+    background-color: #b1606a;
+    border: 0 solid #b1606a;
+    border-radius: 30px;
+}
+.buy-now button:hover{
+    color: white;
+    background-color: #3b2392;
+}
+.buy-now button p{
+    color: white;
+    margin-top: -20px;
+}
+.subscribe-head{
+    margin: 60px 30px 70px 30px;
+    padding: 30px;
+    height: 600px;
+    border-radius: 5px;
+    background-color: #9c9a9788;
+}
+.subscribe{
+    border-radius: 10px;
+    margin: 50px 150px 70px 150px;
+    background-color: #3b2392;
+    color: white;
+    height: 500px;
+}
+.discount{
+    padding: 90px 0 0 100px;
+    width: 900px;
+}
+.discount-head{
+    font-size: 40px;
+    padding-top: 30px;
+    text-shadow: 1px 1px 5px 10px #80808031;
+}
+.discount-para{
+    font-size: 15px;
+    color: orange;
+    text-shadow: 2px 2px 5px 10px grey;
+}
+.email{
+    display: flex;
+    width: 800px;
+    height: 60px;
+    margin: 100px 0 100px 360px;
+    border-radius: 50px;
+    background-color: white;
+}
+.enter-email{
+    margin-left: 30px;
+    padding-right: 190px;
+    border: none;
+    outline: none;
+    
+}
+.email:hover{
+    box-shadow: 5px 8px 20px #50515388;
+}
+.button{
+    letter-spacing: 3px;
+    margin-left: 200px;
+    margin-top: 8px;
+    width: 180px;
+    height: 45px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #3b2392;
+}
+
+.footer{
+    height: 100px;
+    background-color: black;
+}
+
+/* new section for margin */
+.log-sign-m{
+    margin-top: 12rem !important;
+    background-color: transparent;
+
+}
+
+
+
+
+

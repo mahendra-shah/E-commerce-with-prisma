@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head_links.ejs') %>
+</head>
+
+<body>
+    <!-- ------------------ nav --------------------------- -->
+    <navbar>
+        <%- include('../partials/navbar.ejs') %>
+    </navbar>
+    
+
+    <!-- --------------------- upper section ------------------ -->
+    <div class="up-sec">
+        <h1 class="head">
+            furniture that <br> every one <br> likes
+        </h1>
+        <p class="i-para"> We have 5000+ Review and our customers Trust on our <br>furniture and Quality products</p>
+        <div class="btn">
+            <a href="#buy-now"> <button class="btn-1">
+                    <p class="buy"> Buy Now</p>
+                </button> </a>
+            <a href="#explore"> <button class="btn-2">Explore</button> </a>
+
+        </div>
+
+
+    </div>
+    <div>
+        <div class="image">
+            <img class="sofa" src="images/sofa.png" alt="sofa">
+            <img class="lamp" src="images/lamp.png" alt="lamp">
+        </div>
+
+    </div>
+    <!-- ---------------------first card row -------------------- -->
+    <div class="card-container">
+        <div class="main-card">
+            <div class="card-text-head">
+                <h3><b>Best Furniture <br> Enovation of <br> this year</b></h4>
+                    <p class="card-text-para">Great collection for all</p>
+                    <div class="card-image img1">
+                        <img class="main-card-image" src="../images/1423278.jpg" alt="">
+                    </div>
+            </div>
+
+        </div>
+        <div class="main-card">
+            <div class="card-text-head">
+                <h3><b>Free <br> World-wide <br>Delivery </b></h4>
+                    <p class="card-text-para">Yeah Shop Now</p>
+                    <div class="card-image img2">
+                        <img class="main-card-image" src="../images/1423278.jpg" alt="">
+                    </div>
+            </div>
+
+        </div>
+        <div class="main-card">
+            <div class="card-text-head">
+                <h3><b>Grab <br> Best Deal <br>Today </b></h4>
+                    <p class="card-text-para">Shop Now</p>
+                    <div class="card-image img3">
+                        <img class="main-card-image" src="../images/1423278.jpg" alt="">
+                    </div>
+
+            </div>
+
+        </div>
+    </div> <br>
+    <br>
+    <hr>
+    <div class="best-in-fur-head-div">
+        <h1>Best Products for you</h1>
+    </div>
+    
+
+    <!-- ------------ Best in Furniture section ----------------------  -->
+    <% product.map((r)=>{ %>
+
+        <div class="best-in-fur-coll">
+            <div class="best-in-fur-item">
+                <!-- image size 384 x 268 px used  -->
+                <img class="best-in-fur-item-image" src=<%=r[0].imgUrl %> alt="product">
+                <div class="best-in-fur-desc">
+                    <h4 class=" my-1"><b><%=r[0].name.replace(/^(.{15}[^\s]*).*/, "$1") %></b></h4>
+                    <p><%=r[0].description.replace(/^(.{50}[^\s]*).*/, "$1")+'...' %> </p>
+                    <h6 class=" my-0 ">Price: ₹<%=r[0].price %> <small><del>$80</del></small></h6>
+                    <img class="like-icon" src="images/like.png" alt="">
+                    <div class="buy-now">
+                        <button class=" mx-0 ">
+                            <p> Buy Now</p>
+                        </button>
+                        
+                    </div>
+                </div>
+    
+            </div>
+            <div class="best-in-fur-item">
+                <img class="best-in-fur-item-image" src=<%=r[1].imgUrl %> alt="product">
+                <div class="best-in-fur-desc">
+                    <h4 class=" my-1"><b><%=r[1].name.replace(/^(.{15}[^\s]*).*/, "$1") %></b></h4>
+                    <p><%=r[1].description.replace(/^(.{50}[^\s]*).*/, "$1")+'...' %> </p>
+                    <h6 class=" my-0 ">Price: ₹<%=r[1].price %> <small><del>$80</del></small></h6>
+                    <img class="like-icon" src="images/like.png" alt="">
+                    <div class="buy-now">
+                        <button class=" mx-0 ">
+                            <p> Buy Now</p>
+                        </button>
+                        
+                    </div>
+                </div>
+    
+            </div>
+            <div class="best-in-fur-item">
+                <img class="best-in-fur-item-image" src=<%=r[2].imgUrl %> alt="product">
+                <div class="best-in-fur-desc">
+                    <h4 class=" my-1"><b><%=r[2].name.replace(/^(.{15}[^\s]*).*/, "$1") %></b></h4>
+                    <p><%=r[2].description.replace(/^(.{50}[^\s]*).*/, "$1")+'...' %> </p>
+                    <h6 class=" my-0 ">Price: ₹<%=r[2].price %> <small><del>$80</del></small></h6>
+                    <img class="like-icon" src="images/like.png" alt="">
+                    <div class="buy-now">
+                        <button class=" mx-0 ">
+                            <p> Buy Now</p>
+                        </button>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="best-in-fur-item">
+                <img class="best-in-fur-item-image" src=<%=r[3].imgUrl %> alt="product">
+                <div class="best-in-fur-desc">
+                    <h4 class=" my-1"><b><%=r[3].name.replace(/^(.{15}[^\s]*).*/, "$1") %></b></h4>
+                    <p><%=r[3].description.replace(/^(.{50}[^\s]*).*/, "$1")+'...' %> </p>
+                    <h6 class=" my-0 ">Price: ₹<%=r[3].price %> <small><del>$80</del></small></h6>
+                    <img class="like-icon" src="images/like.png" alt="">
+                    <div class="buy-now">
+                        <button class=" mx-0 ">
+                            <p> Buy Now</p>
+                        </button>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <div class="best-in-fur-item">
+                <img class="best-in-fur-item-image" src=<%=r[4].imgUrl %> alt="product">
+                <div class="best-in-fur-desc">
+                    <h4 class=" my-1"><b><%=r[4].name.replace(/^(.{15}[^\s]*).*/, "$1") %></b></h4>
+                    <p><%=r[4].description.replace(/^(.{50}[^\s]*).*/, "$1")+'...' %> </p>
+                    <h6 class=" my-0 ">Price: ₹<%=r[4].price %> <small><del>$80</del></small></h6>
+                    <img class="like-icon" src="images/like.png" alt="">
+                    <div class="buy-now">
+                        <button class=" mx-0 ">
+                            <p> Buy Now</p>
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <br><br>
+    
+        <% }) %>
+        
+    
+<!-- ----------------------- footer --------------------------- -->
+    <%- include('../partials/footer.ejs') %>
+</body>
+
+</html>

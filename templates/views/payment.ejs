@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/head_links.ejs') %>
+</head>
+
+<body class="full-bg">
+    <!-- navbar -->
+    <%- include('../partials/navbar.ejs') %>
+
+    <!-- login area -->
+    <div class="modal-dialog log-sign-m">
+        <div class="modal-content ">
+            <div class="modal-heading ">
+                <h2 class="text-center mt-3">Login</h2>
+            </div>
+            <hr />
+            <div class="modal-body">
+                <form action="/payhere" method="POST">
+                    <div class="form-group">                        
+                        <div class="input-group">
+                            <label for="">Payment Method :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">A@</div>
+                                <input type="text" name="method" class="form-control" id="inlineFormInputGroupUsername"
+                                placeholder="your payment option card/upi" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">  
+                            <label for="">Card / UPI :</label>                          
+                            <div class="input-group">
+                                <div class="input-group-text">A@</div>
+                                <input type="text" name="detail" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="Card No / upi id" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="">Name on card :</label>
+                            <div class="input-group">
+                                <div class="input-group-text">A@</div>
+                                <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername"
+                                    placeholder="name on card" required>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-lg" style="background-color: #b1606a; color: white;">Pay Now</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
